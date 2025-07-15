@@ -1,5 +1,5 @@
 {% set name = "rdkit-to-params" %}
-{% set version = "1.2.8" %}
+{% set version = "1.2.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rdkit_to_params-{{ version }}.tar.gz
-  sha256: 42f254c406f2a047537d146e5420d0d2334abcdb9deebc5cf18dabd0d7d51848
+  sha256: 128c67ad26e385fb64070ad937f463163e23063bb77818517ce54c074a9bfd5e
 
 build:
   entry_points:
     - smiles-to-params=rdkit_to_params.cli:smiles
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
