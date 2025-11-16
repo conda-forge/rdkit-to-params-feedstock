@@ -1,5 +1,5 @@
 {% set name = "rdkit-to-params" %}
-{% set version = "1.2.11" %}
+{% set version = "1.2.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rdkit_to_params-{{ version }}.tar.gz
-  sha256: 128c67ad26e385fb64070ad937f463163e23063bb77818517ce54c074a9bfd5e
+  sha256: 5a8130e00da3a55365c950fa4324eb5f622797078add5340bea0a3d130f4b787
 
 build:
   entry_points:
